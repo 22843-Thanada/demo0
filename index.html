@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - น้องอิ่มเอม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #ff7675;
+            --secondary-color: #ffeaa7;
+            --text-color: #2d3436;
+            --bg-color: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #ff7675 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header-bg {
+            background: linear-gradient(to right, #ff7675, #e84393);
+            height: 120px;
+            position: relative;
+        }
+
+        .avatar-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -65px auto 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+
+        /* ไอคอนตัวแทนรูปภาพ (สามารถเปลี่ยนเป็นแท็ก img ได้ภายหลัง) */
+        .avatar-placeholder {
+            font-size: 60px;
+            color: var(--primary-color);
+        }
+
+        .profile-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-content h1 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 24px;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            font-size: 18px;
+            color: #74b9ff;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+            background: #e1f5fe;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .info-list {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background: var(--bg-color);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .info-item:hover {
+            background: #fff5f5;
+            transform: scale(1.02);
+        }
+
+        .info-item i {
+            font-size: 20px;
+            color: var(--primary-color);
+            width: 40px;
+            text-align: center;
+        }
+
+        .info-text {
+            margin-left: 10px;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #b2bec3;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #b2bec3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="header-bg"></div>
+        
+        <div class="avatar-container">
+            <i class="fa-solid fa-face-smile-beam avatar-placeholder"></i>
+        </div>
+
+        <div class="profile-content">
+            <h1>เด็กหญิง ฐาณดา ล้อลำเลียง</h1>
+            <div class="nickname">
+                <i class="fa-solid fa-heart animate-pulse"></i> น้องอิ่มเอม
+            </div>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <div class="info-text">
+                        <span class="info-label">วันเกิด / Birthday</span>
+                        <span class="info-value">3 มิถุนายน 2554</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <div class="info-text">
+                        <span class="info-label">อาหารที่ชอบ / Favorite Food</span>
+                        <span class="info-value">ก๋วยเตี๋ยว</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Made with <i class="fa-solid fa-heart" style="color: #ff7675;"></i> Personal Profile Card</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
